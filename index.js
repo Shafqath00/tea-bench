@@ -4,7 +4,7 @@ import Nodemailer from "nodemailer"
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const TOKEN = "3f5517d4d15601a03f6541a010128a79";
 const SENDER_EMAIL = "hello@demomailtrap.com";
 const RECIPIENT_EMAIL = "newbiemill72@gmail.com";
